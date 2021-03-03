@@ -11,3 +11,6 @@ Several snags have been hit:
 
 ### 2/28/21
 Managed to retrieve 100 relevant articles from Der Zeit, lots of work to be done on them and I need a lot more but I should wait to find out about copywrite, hoping to hear tomorrow.
+
+### 3/2/21
+Zeit article text (100 articles) have been added to my dataframe. More cleanup is needed but for now they are at least cohesive texts and at first overview don't appear too messy (weird links/formatting that made it through). TAZ does not let you search specifically by date without having a particular subscription, so I manually collected a few links and had Beautiful Soup get the text from them. Pitt does have access but that page does not have the links (and I am quite sure it would be very hard to scrape) so manual collection it is. Annoyingly there are articles in 2 formats and I can only use one (the other does not have consistent 'div's. I managed to do a test run and compiled a dictionary of 11 articles and URL's and another with URL's and dates. I will try to add more soon, but at least I know the code works.
