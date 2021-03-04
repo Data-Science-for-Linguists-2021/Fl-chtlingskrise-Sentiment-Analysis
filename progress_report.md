@@ -1,4 +1,4 @@
-### First progress report
+### Progress report
 Created GitHub repository and added files.
 Began looking into programs and library to help me with my work - Scrapy, SpaCy, BERT, Gensim.
 
@@ -14,3 +14,7 @@ Managed to retrieve 100 relevant articles from Der Zeit, lots of work to be done
 
 ### 3/2/21
 Zeit article text (100 articles) have been added to my dataframe. More cleanup is needed but for now they are at least cohesive texts and at first overview don't appear too messy (weird links/formatting that made it through). TAZ does not let you search specifically by date without having a particular subscription, so I manually collected a few links and had Beautiful Soup get the text from them. Pitt does have access but that page does not have the links (and I am quite sure it would be very hard to scrape) so manual collection it is. Annoyingly there are articles in 2 formats and I can only use one (the other does not have consistent 'div's. I managed to do a test run and compiled a dictionary of 11 articles and URL's and another with URL's and dates. I will try to add more soon, but at least I know the code works.
+
+### 1st Progress Report
+I managed to scrape all the necessary articles from  Der Zeit using their API to collect a list of links and then Beautiful Soup to get the text. The articles are appended in text form to my zeit dataframe containing links and other useful info. I managed to scrape about 20 articles with their dates from Der Tageszeitung using the manually collected links and made a dataframe from them. All the code seems to be working so it is just a matter of getting the rest of the links for this source. The other sources (Der Süddeutsche Zeitung and Junge  Freiheit) still need to be scraped, but I will get to that next.
+**Data Sharing** Because of copywrite issues I will not be able to share the full article texts, so I will only be sharing the code, with the links and everything else necessary for someone else to replicate my work. This is also why I have not printed any full texts to demonstrate, I will be able to show snippets and segments however.
