@@ -9,3 +9,5 @@ desktop.ini
 #------------------ directories to ignore
 temp/
 data/
+
+my_token.txt
