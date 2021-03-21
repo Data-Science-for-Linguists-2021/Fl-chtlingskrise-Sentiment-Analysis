@@ -1,6 +1,7 @@
 #------------------ Jupyter, R  
 .ipynb_checkpoints
 .Rproj.user
+*.pkl
 #------------------ common OS config files
 .DS_Store
 .Spotlight-V100
