@@ -24,7 +24,7 @@ The second big issue came with Sentiws, the SpaCy pipeline extension for German 
 - [Junge Freiheit](https://jungefreiheit.de), which leans fairly far right, was my last stop. This site did not kindly include a date range in the url so I had to write the first scraping code (that collected to article links) to filter by date. As I mentioned above this stopped working perfectly for reasons I could not determine, however I was still able to sort by date once the dataframe was built. Here is the [nbviewer version](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/scraping/Junge_Freiheit.ipynb) of the script. In the end I got 76 articles. The fewest of any source, but they are a fairly small weekly newspaper.
 
 ### Analysis
-I began my [first analysis](#Sentiment-Analysis) by building a SpaCy pipeline including Sentiws which I then passed all the text through, having it collect the sentiment scores when there was one. I then took the mean of the scores for each article and ran that through a custom function to give each article a 'pos' or 'neg' label.
+I began my [first analysis](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/Presentation.ipynb#Sentiment-Analysis) by building a SpaCy pipeline including Sentiws which I then passed all the text through, having it collect the sentiment scores when there was one. I then took the mean of the scores for each article and ran that through a custom function to give each article a 'pos' or 'neg' label.
 Here is a plot of that first run!
 ![png](images/sentiment_bysource1.png)
 
