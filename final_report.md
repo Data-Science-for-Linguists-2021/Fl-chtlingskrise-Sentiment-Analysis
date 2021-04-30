@@ -73,51 +73,71 @@ At this point it was becoming clear that there was nothing much I could do in th
 I [began](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/Presentation.ipynb#A-deeper-look-at-weighted-words) by looking at the most common weighted words by sentiment. Here are the wordclouds I generated:
 
 Most common weighted words in the positive articles:
+
 ![png](images/WC_pos_weighted.png)
 
 Most common weighted words in the negative articles:
+
 ![png](images/WC_neg_weighted.png)
 
 I also looked at all the words by sentiment, not only the weighted ones. Here are those wordclouds:
 
 Most common overall words in the positive articles:
+
 ![png](images/WC_pos_all.png)
 
 Most common overall words in the negative articles:
+
 ![png](images/WC_neg_all.png)
 
 Clearly there is some overlap in the weighted words, as some negatively weighted words were in the positive articles and vice versa, kurzen (short), for instance, appears often in both. Between the weighted words and all words I find the differences between all the words to actually be more illuminating. For example, refugees (Flüchtlinge) is in the positive words while refugee crisis (Flüchtlingskrise) is in the negative words. This could indicate that it is the crisis that is negative, not the refugees themselves. European (europäische), foreign minister (Aussenminister) and public authorities (Behörden) are all in the negative words as well, indicating that perhaps the political side is more negatively weighted than the personal. On another rather odd note, right-wing extremist (rechstextremer) is in the positive articles, as is PEGIDA, the alt-right group. Since  I doubt that even the right-wing newspaper would speak very positively of them, I wonder if refugees are portrayed more positively in comparison. If nothing else, it shows that the topics are indeed different between sentiments.
 
 #### Word-based analysis by source
-I then went on to do the [same process above on each source](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/Presentation.ipynb#Word-based-analysis-by-source) to compare their word use and the weighted words they contained. Overall my conclusion here is that given the subject matter there are simply going to be more negative words, it is a crisis after all and so words like fear, war, problems and violence are going to appear often, regardless of how the article is speaking about them. This just highlights the need for a more delicate method, one that takes more than just the presence of words into account. However, there are still some interesting differences between the sources (for instance JF mentioned 'illegal' quite often in their negative articles while no others sources did). 
+I then went on to do the [same process above on each source](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/Presentation.ipynb#Word-based-analysis-by-source) to compare their word use and the weighted words they contained. Overall my conclusion here is that given the subject matter there are simply going to be more negative words, it is a crisis after all and so words like fear, war, problems and violence are going to appear often, regardless of how the article is speaking about them. This just highlights the need for a more delicate method, one that takes more than just the presence of words into account. However, there are still some interesting differences between the sources (for instance JF mentioned 'illegal' quite often in their negative articles while no others sources did).
 
 I made word clouds for each source by sentiment, with both weighted words and all words. That is an awful lot of wordclouds so I will not show them all here, they can be in [this section](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/Presentation.ipynb#Word-based-analysis-by-source) in the script and in my [images folder](https://github.com/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/tree/main/images). However, I will put some samples here.
 
 Weighted words for the positive articles:
 
 TAZ:
+
 ![png](images/WC_taz_pos_weighted.png)
 
 SZ:
+
 ![png](images/WC_sz_pos_weighted.png)
 
 Zeit:
+
 ![png](images/WC_zeit_pos_weighted.png)
 
 JF:
+
 ![png](images/WC_jf_pos_weighted.png)
 
 And weighted words for the negative articles:
 
 TAZ:
+
 ![png](images/WC_taz_neg_weighted.png)
 
 SZ:
+
 ![png](images/WC_sz_neg_weighted.png)
 
 Zeit:
+
 ![png](images/WC_zeit_neg_weighted.png)
 
 JF:
+
 ![png](images/WC_jf_neg_weighted.png)
-### conclusions/findings
+
+Here we can see that each source has different most common  weighted words, even though there is some overlap. This could indicate that they are indeed speaking differently about these topics, although there is not really enough evidence to definitively conclude that (they may just be talking about different things).
+
+### Flüchtlingen Trigrams
+My last little aside was to [look at trigrams](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/Presentation.ipynb?flush_cache=true#Trigrams:-one-last-exploration) containing the word refugee. The goal was to examine the words surrounding refugee, especially since it has a negative weight. However, the results were not as helpful as I would have liked and there was no real meaningful difference between trigrams in negative and positive articles.
+### Conclusions
+While in some ways the data fit my hypothesis (Junge Freiheit having the most negative articles), in others it did not. Also, because of the issues I found with Sentiws I do not feel confortable drawing any concrete conclusions regarding my hypothesis. Overall, it seems to me that Sentiws is simply not refined enough to make an absolute judgement about an articles sentiment as it uses such a naive approach. It was a good tool for beginning analysis but I think the next step would have to be something that takes more than word presence into account - such as negation analysis or anaphora resolution. I think my word-based analysis shows that there are definitely differences between the sources and what/how they are reporting on things and even more than that showed why the articles are all skewed so negatively: namely, that it is a CRISIS and therefore words like war and violence are going to be very prevalent.
+
+While there are many things I would do differently if I could do it again I am very happy with the way the project turned out in the end and I hope that others enjoy looking at my work as well :)
