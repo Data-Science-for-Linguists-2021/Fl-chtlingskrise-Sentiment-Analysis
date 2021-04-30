@@ -28,6 +28,7 @@ I scraped my data using urllib and beautiful soup from [Der Zeit](https://www.ze
     - [zeit.ipynb](https://github.com/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/scraping/zeit.ipynb): code for scraping Der Zeit. here is  the [nbviewer version](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/scraping/zeit.ipynb)
     - [Süddeutsce_zeitung.ipynb](https://github.com/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/scraping/Süddeutsche_zeitung.ipynb): code for scraping Der Süddeutsche Zeitung. Here is the [nbviewer version](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/scraping/Süddeutsche_zeitung.ipynb)
 
+-  [final_report.md](https://github.com/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/final_report.md): final report, documenting my process and findings.
 - [DS_presentation.pdf](https://github.com/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/blob/main/DS_presentation.pdf): a pdf version of my class presentation.
 - [html pics](https://github.com/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/tree/main/html%20pics): pictures of the html for each scraped site.
 - [images](https://github.com/Data-Science-for-Linguists-2021/Fluechtlingskrise-Sentiment-Analysis/tree/main/images): a folder with all the images generated in my notebook.
